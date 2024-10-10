@@ -1,3 +1,4 @@
+# A program to calculate price after discount.
 price_string = input('Enter the price : ')
 price = float(price_string)
 price = round(price,2)
