@@ -1,3 +1,4 @@
+# A program to calculate VAT from amount
 amount_string = input('Enter the amount : ')
 amount = float(amount_string)
 vat = amount * 0.23
