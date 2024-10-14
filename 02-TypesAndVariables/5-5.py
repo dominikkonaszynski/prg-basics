@@ -12,3 +12,4 @@ print(f'Enter price : {price}')
 print(f'Enter discount % : {discount}')
 print(f'Price with discount : {price_after_discount} ')
 print(f'Reduction : {reduction}')
+
