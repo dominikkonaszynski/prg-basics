@@ -16,5 +16,5 @@ for char in plain_text:
     # add encrypted character to encrypted text
     ...
 
-print(plain_text...)
-print(encrypted_text...)
+print(f'{plain_text}...)
+print(f'{encrypted_text}...)
