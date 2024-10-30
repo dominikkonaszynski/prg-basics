@@ -2,17 +2,19 @@
 # Calculates and prints the quarter of the year for a given
 # month number (1..12)
 #
-month = int(input('Enter month number (1..12): '))
+month = int(input('Enter month number (1 - 12): '))
 
-if month >= 10:
+if 10 <= month <= 12:
     quarter = 4
-elif month >= 7:
+elif 7 <= month < 10:
     quarter = 3
-elif month >= 4:
+elif 4 <= month < 7:
     quarter = 2
-elif month >= 1:
+elif 1 <= month < 4:
     quarter = 1   
 else:
-    print("You entered wrong month ")     
+    print("You entered wrong month ")
+    quarter = None
 
-print(f'Month {month} is in quarter {quarter}')
+if quarter is not None:
+    print(f'Month {month} is in quarter {quarter}')
