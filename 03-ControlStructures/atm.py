@@ -2,7 +2,15 @@
 # ATM (cash machine) simulator
 #
 balance = 1000  # Initial balance
-pin = '1111' # initial 4-digit PIN code
+pin = "1111" # initial 4-digit PIN code
+
+while True:
+    entered_pin = input("Enter the pin: ")
+    if entered_pin == pin:
+        break
+    else:
+        print("Incorrect PIN. Please try again.")
+
 
 while True:
     print()
