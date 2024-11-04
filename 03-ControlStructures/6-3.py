@@ -20,9 +20,3 @@ elif bulbs_on == 2:
     print(f'Switch one is off and switch two is on, so {bulbs_on} bulbs are working')
 elif bulbs_on == 3:
     print(f"All the light switches are on, that means all the {bulbs_on} bulbs are working")
-
-
-    
-
-    
-
