@@ -4,7 +4,6 @@
 #
 points = int(input("Enter the amount of points you got: "))
 def pts_to_grade(points):
-    grade = ''
     if points >= 18:
         grade = 'Excellent'
     elif points >=14:
