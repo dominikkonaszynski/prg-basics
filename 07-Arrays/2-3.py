@@ -11,21 +11,28 @@ monthly_expenses = [
 # Calculates expenses
 # Use loop statements
 total_food_cost = 0
+total_transport_cost = 0
+total_utilities_cost = 0
 for i in range(len(monthly_expenses)):
-    food_cost = monthly_expenses[i][0]
-    total_food_cost += food_cost
+    total_food_cost += monthly_expenses[i][0]
+    total_transport_cost += monthly_expenses[i][1]
+    total_utilities_cost += monthly_expenses[i][2]
 
-
+total_week1_cost = sum(monthly_expenses[0])
+total_week2_cost = sum(monthly_expenses[1])
+total_week3_cost = sum(monthly_expenses[2])
+total_week4_cost = sum(monthly_expenses[3])
+total_cost = total_week1_cost + total_week2_cost + total_week3_cost + total_week4_cost
 
 # Print expenses
 print('MONTHLY EXPENSES')
 print('----------------')
 print('Food:',total_food_cost)
-print('Transport:',...)
-print('Utilities:',...)
-print('Week 1:',...)
-print('Week 2:',...)
-print('Week 3:',...)
-print('Week 4:',...)
+print('Transport:',total_transport_cost)
+print('Utilities:',total_utilities_cost)
+print('Week 1:',total_week1_cost)
+print('Week 2:',total_week2_cost)
+print('Week 3:',total_week3_cost)
+print('Week 4:',total_week4_cost)
 print('---------------')
-print('TOTAL:',...)
+print('TOTAL:',total_cost)
